@@ -2,6 +2,8 @@ import urllib.request
 from PIL import Image
 from pytesseract.pytesseract import image_to_string
 jw_addr=['60.18.131.133:11181','60.18.131.133:11180','60.18.131.131:11080','60.18.131.131:11180']
+jw_veryfy_link = 'http://'+jw_addr[0]+'/academic/common/security/check1.jsp'
+lib_veryfy_link = 'http://202.199.233.11:8080/reader/captcha.php'
 class Downloader:
     def __init__(self):
         self.data_path = 'A:/data/'
